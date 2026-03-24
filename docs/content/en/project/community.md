@@ -4,21 +4,38 @@ description: Meshery's open source, cloud native community
 categories: [community]
 ---
 
-Meshery is a CNCF project maintained by engineers from Layer5, VMware, Red Hat, Rackspace, Citrix, Instabase, Microsoft, OpenGov, Computas AS, Rill Data, Quantex, Lumina Networks, API7, F5, Citi, Acquia, and HashiCorp. Meshery is an open source project that adheres to the [CNCF's Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). Meshery advance the state of the art surrounding cloud native management and enable adopters of Cloud Native technologies and techniques to do so with confidence. Our shared commitment to the open source spirit pushes Meshery forward.
+Meshery is a CNCF project maintained by engineers from Layer5, VMware, Red Hat, Rackspace, Citrix, Instabase, Microsoft, OpenGov, Computas AS, Rill Data, Quantex, Lumina Networks, API7, F5, Citi, Acquia, and HashiCorp. Meshery is an open source project that adheres to the [CNCF's Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). Meshery advances the state of the art in cloud native management and enables adopters of cloud native technologies to operate with confidence. Our shared commitment to the open source spirit drives Meshery forward.
 
 ## Getting involved in the Community
 
-Get involved with Meshery and supporting projects. Start by reading through the [Newcomers Guide](https://meshery.io/community), which provides details on how to participate. Seek out other community members, who will make sure you are not left out. We always have a role for everyone whether to be a code-writer, a community manager, user, advocate, or just to listen in. The Meshery community is always open and warmly welcomes you.  If this is your first time making open source contribution, you are in the right place!
+Get involved with Meshery and supporting projects. Start by reading through the [Newcomers Guide](https://meshery.io/community), which provides details on how to participate.
 
-Please see our [contributing guide](/project/contributing) for specific details about setting up your development environment and to start learning the innerworkings of a specific Meshery component.
+The Meshery community is open, inclusive, and beginner-friendly. Whether you are a developer, designer, writer, or simply curious, there is a place for you.
+
+If this is your first open source contribution, you are in the right place!
+
+### 🚀 Quick Start for New Contributors
+
+Follow these steps to get started quickly:
+
+1. Fork the Meshery repository on GitHub.
+2. Explore issues labeled **"good first issue"** or **"help wanted"**.
+3. Join the Meshery Slack community to connect with contributors.
+4. Ask questions and seek guidance when needed.
+5. Make your changes and submit your first pull request.
+
+This simple workflow will help you start contributing confidently.
+
+Please see our [contributing guide](/project/contributing) for detailed instructions on setting up your development environment and understanding Meshery components.
 
 #### Community First
 
-The Meshery project is community-built and welcomes collaboration! <a href="https://github.com/meshery/meshery"><i class="fab fa-github"></i> Fork Meshery</a>
+The Meshery project is community-built and welcomes collaboration!  
+<a href="https://github.com/meshery/meshery"><i class="fab fa-github"></i> Fork Meshery</a>
 
 * Join any of the [community meetings](https://meshery.io/calendar).
 * Subscribe to the [community calendar](https://meshery.io/calendar).
-* Fill-in a <a href="https://meshery.io/newcomers">community member form</a> to gain access to community resources.
+* Fill in the <a href="https://meshery.io/newcomers">community member form</a> to gain access to community resources.
 
 ## Talking about Meshery?
 
