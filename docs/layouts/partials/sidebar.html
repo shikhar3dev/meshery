@@ -11,24 +11,47 @@
       autocomplete="off"
     >
   </form>
-  <script type="text/javascript">
-    // Ref: https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-    // Ref: https://stackoverflow.com/questions/11039885/scrollintoview-causing-the-whole-page-to-move
-    (() => {
-      window.addEventListener("load", function () {
-        let scrollElem = document.getElementsByClassName("sidebar-nav__section-link active").item(0);
-        if (scrollElem) {
-         scrollElem.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+
+  <!-- ✅ UPDATED SCRIPT -->
+  <script>
+  (() => {
+    window.addEventListener("load", function () {
+
+      // Scroll active item into view
+      let scrollElem = document.getElementsByClassName("sidebar-nav__section-link active").item(0);
+      if (scrollElem) {
+        scrollElem.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      }
+
+      // Restore open sections
+      const openSections = JSON.parse(localStorage.getItem("openSections") || "[]");
+      openSections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.classList.add("show");
         }
-        let activeSections = document.querySelectorAll(".sidebar-nav__section-link.active");
-        activeSections.forEach(function (activeSection) {
-          let parentCollapse = activeSection.closest(".collapse");
-          if (parentCollapse) {
-            parentCollapse.classList.add("show");
+      });
+
+      // Save state on toggle click
+      document.querySelectorAll(".toggle").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          const target = this.getAttribute("data-target")?.replace("#", "");
+          if (!target) return;
+
+          let openSections = JSON.parse(localStorage.getItem("openSections") || "[]");
+
+          if (openSections.includes(target)) {
+            openSections = openSections.filter(id => id !== target);
+          } else {
+            openSections.push(target);
           }
+
+          localStorage.setItem("openSections", JSON.stringify(openSections));
         });
       });
-    })();
+
+    });
+  })();
   </script>
 
   <nav class="sidebar-nav" id="td-section-nav">
@@ -88,18 +111,18 @@
                     style="font-weight: normal;"
                   >{{ $grandchild.title }}</a>
                 </li>
-                {{ end }} <!-- grandchild -->
+                {{ end }}
               </ul>
-              {{ end }} <!-- end grandchildren -->
-              {{ end }} <!-- children -->
+              {{ end }}
+              {{ end }}
             </ul>
-            {{ end }} <!-- end if children -->
-          {{ end }} <!-- end if pageurl -->
-          {{ end }} <!-- section.links -->
+            {{ end }}
+          {{ end }}
+          {{ end }}
         </ul>
-        {{ end }} <!-- section.links -->
+        {{ end }}
       </li>
-    </ul> <!-- end of "sidebar-nav__section" -->
+    </ul>
     {{ end }}
   </nav>
 </div>
